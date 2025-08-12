@@ -526,7 +526,7 @@ function Navbar() {
                           <div className="border-t border-gray-800/50">
                             <button
                               onClick={handleSignOut}
-                              className="flex items-center space-x-3 px-4 py-3 text-sm text-red-400 hover:bg-red-500/10 hover:text-red-300 transition-colors w-full text-left"
+                                🛡️ Administration
                             >
                               <LogOut className="w-4 h-4" />
                               <span>Déconnexion</span>

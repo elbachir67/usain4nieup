@@ -18,6 +18,7 @@ import learnerProfileRoutes from "./routes/learnerProfiles.js";
 import { pathwayRoutes } from "./routes/pathways.js";
 import { quizRoutes } from "./routes/quiz.js";
 import { aiRoutes } from "./routes/ai.js";
+import { adminRoutes } from "./routes/admin.js";
 
 import { config } from "./config/env.js";
 
@@ -78,6 +79,7 @@ app.use("/api/profiles", learnerProfileRoutes);
 app.use("/api/pathways", pathwayRoutes);
 app.use("/api", quizRoutes);
 app.use("/api/ai", aiRoutes); // Nouvelles routes IA
+app.use("/api/admin", adminRoutes); // Routes d'administration
 
 // Error handling
 app.use(errorHandler);
