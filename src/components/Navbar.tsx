@@ -25,6 +25,7 @@ import {
   MessageSquare,
   BarChart3,
   Sparkles,
+  Shield,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -488,10 +489,10 @@ function Navbar() {
                                 </div>
                                 <Link
                                   to="/admin/dashboard"
-                                  className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-800/50 hover:text-white transition-colors"
+                                  className="flex items-center space-x-3 px-4 py-3 text-sm text-red-300 hover:bg-red-500/10 hover:text-red-200 transition-colors"
                                   onClick={() => setUserMenuOpen(false)}
                                 >
-                                  <Settings className="w-4 h-4" />
+                                  <Shield className="w-4 h-4" />
                                   <span>Dashboard Admin</span>
                                 </Link>
                                 <Link
@@ -526,7 +527,7 @@ function Navbar() {
                           <div className="border-t border-gray-800/50">
                             <button
                               onClick={handleSignOut}
-                                🛡️ Administration
+                              className="flex items-center space-x-3 px-4 py-3 text-sm text-red-400 hover:bg-red-500/10 hover:text-red-300 transition-colors w-full text-left"
                             >
                               <LogOut className="w-4 h-4" />
                               <span>Déconnexion</span>
