@@ -25,7 +25,6 @@ import {
   MessageSquare,
   BarChart3,
   Sparkles,
-  Shield,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -489,10 +488,10 @@ function Navbar() {
                                 </div>
                                 <Link
                                   to="/admin/dashboard"
-                                  className="flex items-center space-x-3 px-4 py-3 text-sm text-red-300 hover:bg-red-500/10 hover:text-red-200 transition-colors"
+                                  className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-800/50 hover:text-white transition-colors"
                                   onClick={() => setUserMenuOpen(false)}
                                 >
-                                  <Shield className="w-4 h-4" />
+                                  <Settings className="w-4 h-4" />
                                   <span>Dashboard Admin</span>
                                 </Link>
                                 <Link
@@ -527,7 +526,7 @@ function Navbar() {
                           <div className="border-t border-gray-800/50">
                             <button
                               onClick={handleSignOut}
-                              className="flex items-center space-x-3 px-4 py-3 text-sm text-red-400 hover:bg-red-500/10 hover:text-red-300 transition-colors w-full text-left"
+                                🛡️ Administration
                             >
                               <LogOut className="w-4 h-4" />
                               <span>Déconnexion</span>
@@ -727,20 +726,20 @@ function Navbar() {
                         <div className="border-t border-gray-800/50 mt-2 pt-2">
                           <div className="px-4 py-2">
                             <p className="text-xs font-semibold text-purple-400 uppercase tracking-wider">
-                              Administration
+                              🛡️ Administration
                             </p>
                           </div>
                           <Link
                             to="/admin/dashboard"
-                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-gray-300 hover:bg-gray-800/50 hover:text-white transition-colors"
+                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-red-300 hover:bg-red-500/10 hover:text-red-200 transition-colors"
                             onClick={() => setMobileMenuOpen(false)}
                           >
-                            <Settings className="w-5 h-5" />
+                            <Shield className="w-5 h-5" />
                             <span>Dashboard Admin</span>
                           </Link>
                           <Link
                             to="/admin/goals"
-                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-gray-300 hover:bg-gray-800/50 hover:text-white transition-colors"
+                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-red-300 hover:bg-red-500/10 hover:text-red-200 transition-colors"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             <Target className="w-5 h-5" />
@@ -748,7 +747,7 @@ function Navbar() {
                           </Link>
                           <Link
                             to="/admin/users"
-                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-gray-300 hover:bg-gray-800/50 hover:text-white transition-colors"
+                            className="flex items-center space-x-3 px-4 py-3 rounded-lg text-sm text-red-300 hover:bg-red-500/10 hover:text-red-200 transition-colors"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             <Users className="w-5 h-5" />
